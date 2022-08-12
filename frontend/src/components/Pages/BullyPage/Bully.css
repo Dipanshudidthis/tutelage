@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+  --white: #fff;
+  --black: #24292d;
+  --nav-main: #4070f4;
+  --switchers-main: #0b3cc1;
+  --light-bg: #F0F8FF;
+}
+.home-content{
+    margin-top: 65px;
+  height: 100vh;
+  width: 100%;
+  background: var(--light-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+}
+.home-content h2{
+    box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+  color: var(--black);
+  font-size: 50px;
+}
+.home-content h3{
+    box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+  color: var(--black);
+  font-size: 42px;
+  margin-top: -8px;
+}
+.home-content h3 span{
+  color: var(--nav-main);
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+}
+.home-content h3 span.darkMode{
+  color: var(--black);
+}
+.home-content p{
+  color: var(--black);
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  width: 45%;
+  text-align: justify;
+  margin: 4px 0 30px 0;
+}
+.home-content a{
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: var(--nav-main);
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
+}
+.home-content a i{
+  transform: rotate(45deg);
+  font-size: 16px;
+}
+.home-content a:hover{
+  background: var(--switchers-main);
+}
+@media (max-width: 1050px) {
+  .home-content p{
+    width: 90%;
+  }
+  .button input{
+    width: 90%;
+  }
+}
+
+
+
+
+.button{
+    height: 45px;
+    margin: 35px 0
+  }
+.button input{
+    height: 100%;
+    width: 30%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #7c81eb;
+  }
+.button input:hover{
+   /* transform: scale(0.99); */
+   background: #6d73e9;
+   }
